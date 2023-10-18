@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main style="width: 400px">
+      <div class="options-container">
+        <div class="descriptions">
+            <div class="logo-holder">
+                <img src="logo.png" width="100px" alt="" srcset="">
+            </div>
+            <div class="content">
+                A simple dark mode(ish) helper extension. Not affiliated with Quantic School at all.
+            </div>
+        </div>
+        <div class="invert-option">
+          <label for="invert_colors" class="titles">
+            <input type="checkbox" name="invert_colors" id="invert_colors" />
+            Invert Colors</label
+          >
+        </div>
+        <div class="brightness-slider">
+          <span class="titles">Brightness (<span id="brightness-slider-val">100</span>) </span>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="100"
+              class="slider"
+              id="slider_brightness"
+            />
+          </div>
+        </div>
+        <div class="color-slider">
+            <span class="titles">Color Shift (<span id="color-slider-val">0</span>) </span>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="0"
+                class="slider"
+                id="slider_color"
+              />
+            </div>
+          </div>
+          <div class="color-slider">
+            <span class="titles">Saturation (<span id="saturation-slider-val">0</span>) </span>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="0"
+                class="slider"
+                id="slider_saturation"
+              />
+            </div>
+          </div>
+      </div>
+      <div style="margin-top: 20px">
+        Use predefined modes (that have worked for me):
+        <div class="descriptions" style="margin-top: 10px; justify-content: left; gap:20px">
+            <div  class="autoModes">Study</div>
+            <div  class="autoModes">Off Color</div>
+            <div  class="autoModes">B&W</div>
+        </div>
+      </div>
+      <div style="margin-top: 20px">
+        <button>Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
